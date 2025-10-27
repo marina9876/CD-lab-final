@@ -51,6 +51,7 @@ int main() {
             pop(); pop(); pop(); push('E');
             reduced = 1;
         }
+        
         // Rule 4: E -> E*E  
         else if(top>=2 && stack[top-2]=='E' && stack[top-1]=='*' && stack[top]=='E') {
             show("E->E*E");
